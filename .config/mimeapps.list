@@ -1,0 +1,5 @@
+[Added Associations]
+application/wps-office.xlsx=wps-office-et.desktop;
+image/jpeg=feh.desktop;
+video/mp4=userapp-"ffplay"-3S4UUZ.desktop;org.pwmt.zathura.desktop;
+text/x-csrc=vim.desktop;
