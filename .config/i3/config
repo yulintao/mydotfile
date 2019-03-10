@@ -30,9 +30,10 @@ font pango:monospace 8
 floating_modifier $mod
 # backgound pages
 exec_always --no-startup-id feh --bg-scale /usr/share/background/1920_1080_2010040712254649428.jpg
+#exec_always --no-startup-id feh --bg-scale /usr/share/background/lock-screen.png
 #new_window 1pixel
-for_window [class="^.*"] border pixel 0
-gaps inner 0
+for_window [class="^.*"] border pixel 1
+gaps inner 3
 gaps outer 0
 # plus/minus window size
 bindsym $mod+z			gaps inner current plus 5
@@ -56,11 +57,13 @@ bindsym $mod+Tab		workspace next
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal 
 # bindsym $mod+Return exec i3-sensible-terminal -fg lightgray -bg black -bc -tr -tint lightgray -sh 60 -sr
-bindsym $mod+Return exec i3-sensible-terminal -tr -sh 70 -sr -sb
+bindsym $mod+Return exec i3-sensible-terminal -tr -sh 70 -sr 
+# 屏幕截图
+bindsym --release ctrl+x exec --no-startup-id scrot -s name.png -e 'mv $f ~/screen-shot/'
 # split in horizontal orientation
-bindsym $mod+apostrophe split horizontal ;; exec i3-sensible-terminal -tr -sh 70 -sr -sb
+bindsym $mod+apostrophe split horizontal ;; exec i3-sensible-terminal -tr -sh 70 -sr
 # split in vertical orientation
-bindsym $mod+slash split vertical ;; exec i3-sensible-terminal -tr -sh 70 -sr -sb
+bindsym $mod+slash split vertical ;; exec i3-sensible-terminal -tr -sh 70 -sr 
 
 # kill focused window
 bindsym $mod+Shift+q kill
