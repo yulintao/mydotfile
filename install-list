@@ -8,6 +8,7 @@ arp-scan
 atool
 aurman
 autoconf
+autojump
 automake
 awesome-terminal-fonts
 axel
@@ -28,7 +29,6 @@ deepin-wine
 deepin-wine-tim
 deepin-wine-wechat
 device-mapper
-dhcpcd
 dialog
 diffutils
 e2fsprogs
@@ -60,7 +60,9 @@ google-chrome
 grep
 groff
 grub
+gtkglext
 gzip
+haproxy
 haveged
 highlight
 htop
@@ -105,20 +107,23 @@ networkmanager
 noto-fonts-emoji
 ntfs-3g
 ntpdate
+obs-studio
 openssh
 openvpn
 os-prober
 pacman
+pangox-compat
 patch
 pavucontrol
 pciutils
 perl
 pkgconf
-polipo
+polybar
 powerline-fonts
 powerline2
 procps-ng
 psmisc
+ptunnel
 pulseaudio
 pulsemixer
 pygtk
@@ -128,6 +133,7 @@ python2-pyopenssl
 qbittorrent
 radare2
 ranger
+reflector
 reiserfsprogs
 rofi
 rxvt-unicode
@@ -138,8 +144,10 @@ sed
 shadow
 shadowsocks-libev
 signal
+simplescreenrecorder
 sipcalc
 sudo
+supervisor
 sysfsutils
 sysstat
 systemd
@@ -161,6 +169,7 @@ usbutils
 util-linux
 vi
 vim
+vlc
 w3m
 wget
 which
@@ -177,6 +186,7 @@ xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-fonts-encodings
+xorg-fonts-misc
 xorg-iceauth
 xorg-luit
 xorg-mkfontscale

@@ -33,6 +33,10 @@ URxvt.mouseWheelScrollPage:True
 URxvt.scrollTtyOutput:False
 URxvt.scrollWithBuffer:True
 URxvt.scrollTtyKeypress:True
+
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+URxvt.secondaryWheel: 1
 !!光标闪烁
 URxvt.cursorBlink:True
 URxvt.saveLines:30000
@@ -44,10 +48,6 @@ Xft.dpi:96
 !!URxvt.boldfont:xft:Source Code Pro:antialias=True:pixelsize=15,xft:WenQuanYi Zen Hei:pixelsize=15
 URxvt.font:xft:Meslo LG M for Powerline:pixelsize=15,xft:Source Code Pro for Powerline:pixelsize=15,xft:SourceHanSerifCN-Medium:pixelsize=15
 URxvt.boldfont:xft:Meslo LG M for Powerline:pixelsize=15,xft:Source Code Pro for Powerline:pixelsize=15,xft:SourceHanSerifCN-Medium:pixelsize=15
-
-
-
-
 
 
 
