@@ -31,7 +31,7 @@ floating_modifier $mod
 # backgound pages
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-scale /usr/share/background/1920_1080_2010040712254649428.jpg
-exec_always --no-startup-id compton -b
+exec_always --no-startup-id compton -CGb
 #exec_always --no-startup-id feh --bg-scale /usr/share/background/lock-screen.png
 #new_window 1pixel
 #for_window [class="^.*"] border pixel 0
@@ -75,11 +75,13 @@ bindsym $mod+slash split vertical ;; exec i3-sensible-terminal -tr -sh 20 -sr
 bindsym $mod+Shift+q kill
 # lock screen
 bindsym $mod+x exec --no-startup-id $HOME/.scripts/i3cmds/lockscreen
- 
+
+exec sudo iwconfig wlp2s0 power off
+
 # disable touchpad
 exec synclient TouchpadOff=1
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun
 #bindsym $mod+d exec dmenu_run
 # file manager
 bindsym $mod+e exec thunar
