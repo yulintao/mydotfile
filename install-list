@@ -2,6 +2,7 @@ adobe-source-han-sans-cn-fonts
 adobe-source-han-serif-cn-fonts
 alsa-utils
 arandr
+arc-gtk-theme
 archlinuxcn-keyring
 aria2-fast
 arp-scan
@@ -25,10 +26,8 @@ compton
 coreutils
 cryptsetup
 cscope
-deepin-wine
-deepin-wine-tim
-deepin-wine-wechat
 device-mapper
+dhclient
 dialog
 diffutils
 e2fsprogs
@@ -49,6 +48,7 @@ filesystem
 findutils
 firefox
 flex
+foxitreader
 gawk
 gcc
 gcc-libs
@@ -60,6 +60,7 @@ google-chrome
 grep
 groff
 grub
+gthumb
 gtkglext
 gzip
 haproxy
@@ -78,6 +79,15 @@ iw
 jfsutils
 kchmviewer
 less
+lib32-gcc-libs
+lib32-libglade
+lib32-libglvnd
+lib32-libpulse
+lib32-libx11
+lib32-openssl
+lib32-util-linux
+lib32-xcb-util
+lib32-xcb-util-keysyms
 libnetfilter_queue
 libpng12
 libtool
@@ -107,6 +117,7 @@ networkmanager
 noto-fonts-emoji
 ntfs-3g
 ntpdate
+numix-icon-theme-git
 obs-studio
 openssh
 openvpn
@@ -173,10 +184,10 @@ vlc
 w3m
 wget
 which
-wine
 wireshark-qt
 wpa_supplicant
 wps-office
+xbindkeys
 xf86-input-synaptics
 xf86-video-vesa
 xfsprogs
