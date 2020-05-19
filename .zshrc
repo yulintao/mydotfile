@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/code/universal-ctags/ctags-work/bin
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/universal-ctags/ctags-work/bin
 
-alias r="ranger"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/yult/.oh-my-zsh"
 
@@ -9,7 +9,11 @@ export ZSH="/home/yult/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#
+# #fishy #af-magic #afowler 
+#
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -66,6 +70,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   autojump
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -98,7 +103,25 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -s /home/yult/.autojump/etc/profile.d/autojump.sh ]] && source /home/yult/.autojump/etc/profile.d/autojump.sh
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#export FZF_DEFAULT_COMMAND="fd --exclude={*.o,.git,.idea,.vscode,.sass-cache,node_modules,build} --type f"
 export FZF_DEFAULT_COMMAND="fd --type f"
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
+
+
+export PATH="$PATH:/home/yult/work-proj/universal-ctags/ctags-work/bin"
+##export LD_LIBRARY_PATH=$PWD
+#export RTE_SDK=/home/yult/work-proj/dpdk
+#export RTE_TARGET=x86_64-native-linuxapp-gcc
+
+if [ "$TERM"="linux" ] ;then
+export LANG="en_US.UTF-8"
+fi
+alias r="ranger"
+alias v="vim"
+#alias autoformat="indent -n -il0 -npro -kr -i8 -ts8 -sob -l80 -ss -ncs -cp1"
+[[ -s /home/yult/.autojump/etc/profile.d/autojump.sh ]] && source /home/yult/.autojump/etc/profile.d/autojump.sh
+
+export RTE_SDK=/home/yult/dpdk
+export RTE_TARGET=x86_64-native-linuxapp-gcc

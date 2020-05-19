@@ -2,4 +2,11 @@
 application/wps-office.xlsx=wps-office-et.desktop;
 image/jpeg=feh.desktop;
 video/mp4=userapp-"ffplay"-3S4UUZ.desktop;org.pwmt.zathura.desktop;
-text/x-csrc=vim.desktop;
+text/x-csrc=emacs.desktop;vim.desktop;
+
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
