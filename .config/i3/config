@@ -62,19 +62,20 @@ bindsym $mod+Tab		workspace next
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal 
 # bindsym $mod+Return exec i3-sensible-terminal -fg lightgray -bg black -bc -tr -tint lightgray -sh 60 -sr
-bindsym $mod+Return exec i3-sensible-terminal -tr -sh 20 -sr
+bindsym $mod+Return exec i3-sensible-terminal
 # 屏幕截图
 # bindsym --release ctrl+x exec --no-startup-id scrot -s name.png -e 'mv $f ~/screen-shot/'
 #bindsym $mod+Shift+x exec --no-startup-id scrot -s name.png -e 'mv $f ~/screen-shot/'
 # split in horizontal orientation
-bindsym $mod+apostrophe split horizontal ;; exec i3-sensible-terminal -tr -sh 20 -sr
+bindsym $mod+apostrophe split horizontal ;; exec i3-sensible-terminal
 # split in vertical orientation
-bindsym $mod+slash split vertical ;; exec i3-sensible-terminal -tr -sh 20 -sr 
+bindsym $mod+slash split vertical ;; exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+q kill
 # lock screen
-#bindsym $mod+Shift+x exec --no-startup-id dm-tool lock
+bindsym $mod+Shift+x exec --no-startup-id dm-tool lock
+#bindsym $mod+Shift+x exec --no-startup-id betterlockscreen -l
  
 # disable touchpad
 exec synclient TouchpadOff=1
